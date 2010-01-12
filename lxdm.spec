@@ -1,7 +1,7 @@
 Summary: GUI login manager for LXDE
 Name: lxdm
 Version: 0.1.0
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPLv2+
 Group: Graphical desktop/Other
 Source0: http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
@@ -12,6 +12,7 @@ BuildRequires: libxmu-devel
 BuildRequires: pam-devel
 BuildRequires: iso-codes
 BuildRequires: gtk+2-devel
+Requires: iso-codes
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
