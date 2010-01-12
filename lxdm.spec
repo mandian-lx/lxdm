@@ -16,7 +16,6 @@ Requires: iso-codes
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
-LXDM - GUI login manager for LXDE
 A lightweight dropped-in replacement for GDM or KDM.
 
 %prep
