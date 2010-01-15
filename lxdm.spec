@@ -5,6 +5,7 @@ Release: %mkrel 2
 License: GPLv2+
 Group: Graphical desktop/Other
 Source0: http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
+Patch0: lxdm-0.1.0-mdv-customize.patch
 URL: http://www.lxde.org
 BuildRequires: intltool
 BuildRequires: consolekit-devel
@@ -20,6 +21,7 @@ A lightweight dropped-in replacement for GDM or KDM.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %configure2_5x
