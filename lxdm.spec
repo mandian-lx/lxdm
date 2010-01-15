@@ -1,7 +1,7 @@
 Summary: GUI login manager for LXDE
 Name: lxdm
 Version: 0.1.0
-Release: %mkrel 2
+Release: %mkrel 3
 License: GPLv2+
 Group: Graphical desktop/Other
 Source0: http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
@@ -21,7 +21,7 @@ A lightweight dropped-in replacement for GDM or KDM.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch0 -p0 -b .mdv
 
 %build
 %configure2_5x
