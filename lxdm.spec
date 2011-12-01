@@ -32,7 +32,7 @@ rm -f data/lxdm.conf
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 # dm conf file
