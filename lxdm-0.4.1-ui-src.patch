@@ -1,0 +1,11 @@
+--- src/ui.c.old	2011-07-29 17:42:33.000000000 +0400
++++ src/ui.c	2011-08-02 13:03:57.831440388 +0400
+@@ -146,7 +146,7 @@
+ 	else if( !strncmp(str, "shutdown", 6) )
+ 		lxdm_do_shutdown();
+ 	else if( !strncmp(str, "log ", 4) )
+-		g_message(str + 4);
++		g_message("%s", str + 4);
+ 	else if( !strncmp(str, "login ", 6) )
+ 	{
+ 		char *user = greeter_param(str, "user");
