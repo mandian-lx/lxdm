@@ -32,7 +32,7 @@ rm -f data/lxdm.conf
 %make
 
 %install
-rm -rf %{buildroot}
+rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
 # dm conf file
@@ -59,3 +59,34 @@ install -D -m 644 %{SOURCE1} %{buildroot}%{_datadir}/X11/dm.d/27%{name}.conf
 %{_bindir}/lxdm-config
 %{_libdir}/lxdm-greeter-gdk
 %{_libdir}/lxdm-numlock
+
+
+%changelog
+* Tue Aug 02 2011 Александр Казанцев <kazancas@mandriva.org> 0.4.1-1mdv2012.0
++ Revision: 692766
+- update to 0.4.1
+
+* Wed May 04 2011 Oden Eriksson <oeriksson@mandriva.com> 0.2.0-2
++ Revision: 666112
+- mass rebuild
+
+  + Funda Wang <fwang@mandriva.org>
+    - New version 0.2.0
+
+* Wed Mar 10 2010 Ahmad Samir <ahmadsamir@mandriva.org> 0.1.0-4mdv2010.1
++ Revision: 517380
+- add %%{_datadir}/X11/dm.d/27%%{name}.conf to make lxdm get listed in drakedm
+- change mdv-customiztion patch to make lxdm use Ia Ora (Arctic for the moment)
+
+* Fri Jan 15 2010 Funda Wang <fwang@mandriva.org> 0.1.0-3mdv2010.1
++ Revision: 491595
+- bump rel
+- use mandriva background
+- update desc
+
+* Tue Jan 12 2010 Funda Wang <fwang@mandriva.org> 0.1.0-2mdv2010.1
++ Revision: 490043
+- requiresiso-codes
+- import lxdm
+
+
