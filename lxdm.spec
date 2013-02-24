@@ -2,7 +2,7 @@ Summary:	GUI login manager for LXDE
 Name:		lxdm
 Version:	0.4.2
 %define	gitdate	20121019
-Release:	0.%{gitdate}.1
+Release:	0.%{gitdate}.2
 License:	GPLv2+
 Group:		Graphical desktop/Other
 Source0:	http://dfn.dl.sourceforge.net/sourceforge/lxde/%{name}-%{version}.tar.xz
@@ -11,7 +11,6 @@ Patch0:		lxdm-0.2.0-mdv-customization.patch
 Patch1:		lxdm-0.4.1-ui-src.patch
 URL:		http://www.lxde.org
 BuildRequires:	intltool
-BuildRequires:	consolekit-devel
 BuildRequires:	libxmu-devel
 BuildRequires:	pam-devel
 BuildRequires:	iso-codes
@@ -28,7 +27,7 @@ A lightweight dropped-in replacement for GDM or KDM.
 rm data/lxdm.conf
 
 %build
-%configure2_5x
+%configure2_5x	--disable-consolekit
 %make
 
 %install
