@@ -1,10 +1,11 @@
 Summary:	GUI login manager for LXDE
 Name:		lxdm
-Version:	0.4.1
-Release:	2
+Version:	0.4.2
+%define	gitdate	20121019
+Release:	0.%{gitdate}.1
 License:	GPLv2+
 Group:		Graphical desktop/Other
-Source0:	http://dfn.dl.sourceforge.net/sourceforge/lxde/%{name}-%{version}.tar.gz
+Source0:	http://dfn.dl.sourceforge.net/sourceforge/lxde/%{name}-%{version}.tar.xz
 Source1:	27%{name}.conf
 Patch0:		lxdm-0.2.0-mdv-customization.patch
 Patch1:		lxdm-0.4.1-ui-src.patch
@@ -56,6 +57,7 @@ install -m644 %{SOURCE1} -D %{buildroot}%{_datadir}/X11/dm.d/27%{name}.conf
 %{_bindir}/lxdm-config
 %{_libdir}/lxdm-greeter-gdk
 %{_libdir}/lxdm-numlock
+%{_unitdir}/lxdm.service
 
 %changelog
 * Tue Aug 02 2011 Александр Казанцев <kazancas@mandriva.org> 0.4.1-1mdv2012.0
