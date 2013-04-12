@@ -15,6 +15,7 @@ BuildRequires:	libxmu-devel
 BuildRequires:	pam-devel
 BuildRequires:	iso-codes
 BuildRequires:	gtk+2-devel
+BuildRequires:	pkgconfig(systemd)
 Requires:	iso-codes
 
 %description
