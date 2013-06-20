@@ -11,10 +11,10 @@ Patch0:		lxdm-0.2.0-mdv-customization.patch
 Patch1:		lxdm-0.4.1-ui-src.patch
 URL:		http://www.lxde.org
 BuildRequires:	intltool
-BuildRequires:	libxmu-devel
+BuildRequires:	pkgconfig(xmu)
 BuildRequires:	pam-devel
 BuildRequires:	iso-codes
-BuildRequires:	gtk+2-devel
+BuildRequires:	pkgconfig(gtk+-x11-2.0)
 BuildRequires:	pkgconfig(systemd)
 Requires:	iso-codes
 
