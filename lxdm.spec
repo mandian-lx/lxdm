@@ -57,6 +57,6 @@ install -m644 %{SOURCE1} -D %{buildroot}%{_datadir}/X11/dm.d/27%{name}.conf
 %{_sbindir}/lxdm*
 %{_datadir}/%{name}
 %{_bindir}/lxdm-config
-%{_libdir}/lxdm-greeter-gdk
+%{_libexecdir}/lxdm-greeter-gdk
 %{_unitdir}/lxdm.service
 
