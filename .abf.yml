@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   lxdm-0.4.2.tar.xz: 93712371c8d4830a54efa88ec62b72c44235abca
+sources:
+  lxdm-0.5.3.tar.xz: 8c4f7439fa7b56a97e8b19dc62af02a88ae12b45
