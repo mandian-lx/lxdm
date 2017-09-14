@@ -70,6 +70,7 @@ rm data/lxdm.conf
 %makeinstall_std
 
 # dm conf file
+install -dm 0755 %{buildroot}%{_datadir}/X11/dm.d/
 install -pm 0644 %{SOURCE1} %{buildroot}%{_datadir}/X11/dm.d/27%{name}.conf
 
 # locales
