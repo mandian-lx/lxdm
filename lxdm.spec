@@ -7,6 +7,7 @@ Group:		Graphical desktop/Other
 Url:		https://wiki.lxde.org/en/LXDM
 Source0:	https://downloads.sourceforge.net/lxde/%{name}-%{version}.tar.xz
 Source1:	27%{name}.conf
+Source100:	%{name}.rpmlintrc
 Patch0:		lxdm-0.2.0-mdv-customization.patch
 #Patch1:		lxdm-0.4.1-ui-src.patch
 
